@@ -3517,6 +3517,8 @@ function Library:CreateWindow(...)
         Toggled = (not Toggled);
         ModalElement.Modal = Toggled;
 
+        InputService.MouseIconEnabled = Toggled;
+
         if Toggled then
             -- A bit scuffed, but if we're going from not toggled -> toggled we want to show the frame immediately so that the fade is visible.
             
